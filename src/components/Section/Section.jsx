@@ -1,9 +1,16 @@
-const Section = () => {
+const Section = ({ title, text, imgSource }) => {
 
     return (
-        <div className="text-black">
-            <h1>About</h1>
-            <p className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis hic repudiandae quaerat impedit, fugit laboriosam ex vel corporis deleniti voluptatum cumque dignissimos suscipit assumenda aperiam possimus esse aliquam asperiores rem.</p>
+        <div className="flex justify-center flex-wrap-reverse lg:flex-nowrap text-black">
+            <div className="lg:content-center mt-2.5">
+                <h1>{title}</h1>
+                <p>{text}</p>
+            </div>
+            <div>
+                <figure>
+                    <img className="max-w-87.5 rounded-full" src={imgSource} alt="The user avatar" />
+                </figure>
+            </div>
         </div>
     )
 }
