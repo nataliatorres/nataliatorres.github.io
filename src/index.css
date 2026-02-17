@@ -15,11 +15,13 @@
 }
 
 a {
-  color: #547443;
+  /*color: #547443;*/
+  color: #CA9248;
   text-decoration: inherit;
 }
 a:hover {
-  color: #A2BF65;
+  /*color: #A2BF65;*/
+  color: #DFD3BD;
 }
 
 h1 {
