@@ -1,5 +1,5 @@
 const NavBar = () => {
-    const navItems = ["Home", "About", "Projects", "Contact"];
+    const navItems = ["About", "Projects", "Contact"];
 
     return (
         <header className="top-0 relative border-solid z-20 bg-[#4F5030]">
@@ -8,7 +8,7 @@ const NavBar = () => {
                 <nav className="sm:text-lg">
                 {
                     navItems.map((item, index) => (
-                        <a className="pr-[5px]" href="" key={index}>{item}</a>
+                        <a className="pr-[5px]" href={`#${item}`} key={index}>{item}</a>
                     ))
                 }
                 </nav>
