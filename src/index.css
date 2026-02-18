@@ -5,7 +5,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
   background-color: aliceblue;
 
   font-synthesis: none;
@@ -15,12 +14,9 @@
 }
 
 a {
-  /*color: #547443;*/
   color: #CA9248;
-  text-decoration: inherit;
 }
 a:hover {
-  /*color: #A2BF65;*/
   color: #DFD3BD;
 }
 
