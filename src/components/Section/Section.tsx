@@ -8,8 +8,8 @@ type SectionProps = {
 const Section = ({ id, title, text, imgSource }: SectionProps) => {
 
     return (
-        <div id={id} className="flex justify-center flex-wrap-reverse py-12 lg:p-12 lg:flex-nowrap text-black ">
-            <div className="lg:content-center px-3.5 mt-2.5">
+        <div id={id} className="flex justify-center flex-wrap-reverse max-w-300 mx-auto w-full p-12 lg:flex-nowrap lg:gap-14 text-black ">
+            <div className="lg:content-center mt-2.5">
                 <h1>{title}</h1>
                 <p>{text}</p>
             </div>
