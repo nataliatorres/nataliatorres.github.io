@@ -25,13 +25,24 @@ function App() {
         <div id="contact" className="flex flex-col flex-wrap place-content-center max-w-300 mx-auto w-full p-12 text-[#4F5030]">
           <h1>Contact me</h1>
           <section className="flex place-items-center h-24 gap-2">
+            <a href="https://app.thestorygraph.com/profile/nataliatr" target="_blank">
+              <svg className='stroke-[1.6] stroke-[#4F5030] fill-none stroke-linecap-round stroke-linejoin-round transition-transform duration-400 hover:scale-115' width="75px" height="70px" viewBox="0 0 48 48" id="a" xmlns="http://www.w3.org/2000/svg">
+              <defs></defs>
+              <g id="b">
+              <g id="c">
+              <rect id="d" class="h" x="5.5" y="6.6165" width="7.6031" height="29.8423" rx="1" ry="1"/>
+              <rect id="e" class="h" x="16.5636" y="6.6165" width="7.6031" height="29.8423" rx="1" ry="1"/>
+              <rect id="f" class="h" x="30.9108" y="6.3431" width="7.6033" height="29.8418" rx="1" ry="1" transform="translate(-4.6835 11.0135) rotate(-16.9062)"/>
+              <rect id="g" class="h" x="5.5" y="39.0428" width="37" height="2.828" rx="1" ry="1"/>
+              </g>
+              </g>
+              </svg>
+            </a>
             <a href="https://github.com/nataliatorres" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-github-alt" className="fa-4x text-[#4F5030] transition-transform duration-400 hover:scale-115"/> </a>
-            <a href="https://github.com/nataliatorres" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-square-linkedin" className="fa-3x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115"/> </a>
+            <a href="https://www.linkedin.com/in/nataliatr/" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-square-linkedin" className="fa-3x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115"/> </a>
             <a href="https://www.npmjs.com/~nataliatrcodes" target='_blank'> <FontAwesomeIcon icon="fa-brands fa-npm"  className="fa-5x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115"/> </a>
         </section>
         </div>
-        
-        
       </main>
       <Footer></Footer>
     </>
