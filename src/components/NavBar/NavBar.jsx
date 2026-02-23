@@ -4,7 +4,7 @@ import Hamburger from './Hamburger';
 
 const NavBar = () => {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
-    const navItems = ["About", "Projects", "Contact"];
+    const navItems = ["About", "Contact"];
 
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
