@@ -20,11 +20,25 @@ function App() {
     <>
     <NavBar/>
       <main className="bg-[#DFD3BD]">
-        <Section id="about" title={"About"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at ex quis magna viverra ultricies at faucibus nisl. Sed sit amet sem finibus, lacinia libero et, viverra dolor. Ut nec eros nec erat rutrum condimentum. Sed vehicula efficitur pulvinar. Nullam vitae facilisis massa, nec pulvinar odio. Sed a urna ac augue convallis maximus. Cras pellentesque mauris id ullamcorper vestibulum. Nulla aliquet posuere dolor sit amet consequat. Nulla sed dignissim neque. Fusce elit nunc, blandit non fringilla eu, imperdiet sed erat. Duis porta convallis arcu eget commodo. \n Fusce hendrerit a velit ullamcorper ultrices. Nam tincidunt orci quis diam volutpat, vel molestie orci eleifend. Ut a nunc turpis. Integer luctus auctor pulvinar. Nulla ornare mollis tempor. Donec mattis neque vulputate dolor iaculis, a auctor diam elementum. Mauris leo tortor, fermentum et tincidunt non, varius vel libero. Maecenas sollicitudin egestas nisi. Curabitur eu fermentum risus. Donec lacus felis, consectetur nec nibh ac, placerat iaculis enim. Fusce volutpat, leo eget placerat tempor, neque dolor egestas ex, in fermentum magna lacus et metus. Aliquam id cursus sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis placerat turpis sed condimentum. Maecenas a nibh suscipit, sollicitudin ante id, viverra nibh.\n Ut at aliquam turpis. Donec eget tellus sit amet turpis placerat consequat non vestibulum est. In venenatis scelerisque libero et varius. Maecenas mollis feugiat hendrerit. Vestibulum ullamcorper orci tortor, eu convallis felis congue lobortis. Duis vel tortor finibus, vestibulum justo eu, congue lorem. Praesent dictum sapien quis purus molestie ornare. Etiam dictum scelerisque nibh, et facilisis ligula aliquam et. Fusce nec fermentum ex, eget consequat sapien. Mauris iaculis felis quis faucibus hendrerit."} imgSource={"https://unavatar.io/github/nataliatorres"} />
-        <Section id="projects" title={"Test"} text={"Plantitas"} imgSource={""} />
+        <div id="about" className="flex justify-center flex-wrap-reverse max-w-300 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] ">
+            <div className="lg:content-center mt-2.5">
+                <h1>How I Build</h1>
+                <p className='my-3.75'>Hi, I’m Natalia — a Colombian software engineer based in Brisbane. I bring over five years of experience building customer-facing web applications for US-based product teams, working fully remotely in collaborative, product-driven teams. My background spans backend development (PHP, Drupal, REST APIs, relational databases) and frontend technologies (WordPress, JavaScript, HTML, CSS), allowing me to connect technical implementation with real user experience.</p>
+                <p className='my-3.75'>I care deeply about clean, maintainable code and building digital products that solve real problems. Having collaborated closely with designers, product owners, and engineers across time zones, I’ve developed strong communication skills and a thoughtful, detail-oriented approach to delivery. I enjoy turning complex requirements into intuitive, performant interfaces, and creating digital products that solve real problems.</p>
+                <p className='my-3.75'>Currently, I’m focused on growing as a frontend developer and aligning my skills with industry practices in Australia. I’m curious, proactive, and committed to continuous learning — always aiming to contribute thoughtfully to teams building technology that truly serves people.</p>
+            </div>
+            <div>
+                <figure className="flex flex-wrap place-content-center">
+                    <img className="lg:max-w-78 max-w-[80%] rounded-full" src="https://unavatar.io/github/nataliatorres" alt={"The user avatar"} />
+                </figure>
+            </div>
+        </div>
         <div id="contact" className="flex flex-col flex-wrap place-content-center max-w-300 mx-auto w-full p-12 text-[#4F5030]">
-          <h1>Contact me</h1>
+          <h1>Let's Connect</h1>
           <section className="flex place-items-center h-24 gap-2">
+            <a href="https://www.linkedin.com/in/nataliatr/" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-square-linkedin" className="fa-3x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115"/> </a>
+            <a href="https://github.com/nataliatorres" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-github-alt" className="fa-4x text-[#4F5030] transition-transform duration-400 hover:scale-115"/> </a>
+            <a href="https://www.npmjs.com/~nataliatrcodes" target='_blank'> <FontAwesomeIcon icon="fa-brands fa-npm"  className="fa-5x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115"/> </a>
             <a href="https://app.thestorygraph.com/profile/nataliatr" target="_blank">
               <svg className='stroke-[1.6] stroke-[#4F5030] fill-none stroke-linecap-round stroke-linejoin-round transition-transform duration-400 hover:scale-115' width="75px" height="70px" viewBox="0 0 48 48" id="a" xmlns="http://www.w3.org/2000/svg">
               <defs></defs>
@@ -38,9 +52,6 @@ function App() {
               </g>
               </svg>
             </a>
-            <a href="https://github.com/nataliatorres" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-github-alt" className="fa-4x text-[#4F5030] transition-transform duration-400 hover:scale-115"/> </a>
-            <a href="https://www.linkedin.com/in/nataliatr/" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-square-linkedin" className="fa-3x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115"/> </a>
-            <a href="https://www.npmjs.com/~nataliatrcodes" target='_blank'> <FontAwesomeIcon icon="fa-brands fa-npm"  className="fa-5x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115"/> </a>
         </section>
         </div>
       </main>
