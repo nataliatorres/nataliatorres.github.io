@@ -20,10 +20,10 @@ const NavBar = () => {
                     <div onClick={toggleHamburger}>
                         <Hamburger isOpen={hamburgerOpen}/>
                     </div>
-                    <ul className={`text-lg lg:text-1xl ${hamburgerOpen ? 'flex' : 'hidden'} flex-col justify-evenly h-50 w-45 bg-[#4F5030]/85 absolute top-20 right-0 rounded-bl-[10px] md:flex md:flex-row md:items-center md:h-10 md:w-64 md:gap-5 lg:gap-2 md:static md:bg-[#4F5030]`}>
+                    <ul className={`${hamburgerOpen ? 'flex' : 'hidden'} flex-col justify-evenly h-50 w-45 bg-[#4F5030]/85 absolute top-20 right-0 rounded-bl-[10px] md:flex md:flex-row md:items-center md:h-10 md:w-64 md:gap-5 lg:gap-2 md:static md:bg-[#4F5030]`}>
                         {
                             navItems.map((item, index) => (
-                                <a onClick={toggleHamburger} className="relative overflow-hidden group font-medium text-xl md:font-normal md:text-lg" href={`#${item.toLocaleLowerCase()}`} key={index}>
+                                <a onClick={toggleHamburger} className="relative overflow-hidden group font-medium text-xl md:font-normal md:text-2xl" href={`#${item.toLocaleLowerCase()}`} key={index}>
                                     {item}
                                     <div className={`hidden md:block md:absolute bottom-0 right-full group-hover:translate-x-full duration-300 h-[1.5px] w-full bg-[#CA9248]`}></div>
                                 </a>
