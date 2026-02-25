@@ -5,6 +5,7 @@ import Section from './components/Section/Section'
 import Footer from './components/Footer/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
+import profilePicture from './assets/profile_picture.jpeg'
 
 /* import all the icons in Free Solid, Free Regular, and Brands styles */
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -29,7 +30,7 @@ function App() {
             </div>
             <div>
                 <figure className="flex flex-wrap place-content-center">
-                    <img className="lg:max-w-78 max-w-[80%] rounded-full" src="https://unavatar.io/github/nataliatorres" alt={"The user avatar"} />
+                    <img className="lg:max-w-[30vw] max-w-[50vw] rounded-full" src={profilePicture} alt={"Profile picture"} />
                 </figure>
             </div>
         </div>
