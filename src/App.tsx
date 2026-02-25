@@ -28,7 +28,7 @@ function App() {
                 <p className='my-3.75 text-[18px] md:text-[20px] text-left'>I care deeply about clean, maintainable code and building digital products that solve real problems. Having collaborated closely with designers, product owners, and engineers across time zones, I’ve developed strong communication skills and a detail-oriented approach to delivery. I enjoy turning complex requirements into intuitive interfaces, and creating digital products that solve real problems.</p>
                 <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Currently, I’m focused on growing as a frontend developer and aligning my skills with industry practices in Australia. I’m curious, proactive, and committed to continuous learning — always aiming to contribute thoughtfully to teams building technology that truly serves people.</p>
             </div>
-            <div>
+            <div className="flex">
                 <figure className="flex flex-wrap place-content-center">
                     <img className="lg:max-w-[30vw] max-w-[50vw] rounded-full" src={profilePicture} alt={"Profile picture"} />
                 </figure>
