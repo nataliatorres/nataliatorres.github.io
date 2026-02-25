@@ -30,7 +30,7 @@ function App() {
             </div>
             <div className="flex">
                 <figure className="flex flex-wrap place-content-center">
-                    <img className="lg:max-w-[30vw] max-w-[50vw] rounded-full" src={profilePicture} alt={"Profile picture"} />
+                    <img className="max-w-[40vw] lg:max-w-[25vw] rounded-full" src={profilePicture} alt={"Profile picture"} />
                 </figure>
             </div>
         </div>
