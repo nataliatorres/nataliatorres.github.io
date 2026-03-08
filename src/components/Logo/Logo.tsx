@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 type LogoTag = 'img' | 'a'
 
 type LogoProps<T extends LogoTag> = {

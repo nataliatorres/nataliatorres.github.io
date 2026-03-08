@@ -12,6 +12,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Title from './components/Title/Title'
+import Logo from './components/Logo/Logo'
 
 library.add(fas, far, fab)
 
@@ -29,16 +30,16 @@ function App () {
           </div>
           <div className='flex'>
             <figure className='flex flex-wrap place-content-center'>
-              <img className='max-w-[40vw] lg:max-w-[25vw] rounded-full' src={profilePicture} alt='Profile picture' />
+              <Logo type='img' styles='max-w-[40vw] lg:max-w-[25vw] rounded-full' src={profilePicture} alt='Profile picture' href='' icon='' />
             </figure>
           </div>
         </div>
         <div id='contact' className='flex flex-col flex-wrap place-content-center max-w-300 mx-auto w-full p-12 text-[#4F5030]'>
           <Title type='h1' title="Let's Connect" />
           <section className='flex place-items-center h-24 gap-2'>
-            <a href='https://www.linkedin.com/in/nataliatr/' target='_blank' rel='noreferrer'> <FontAwesomeIcon icon='fa-brands fa-square-linkedin' className='fa-3x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115' /> </a>
-            <a href='https://github.com/nataliatorres' target='_blank' rel='noreferrer'> <FontAwesomeIcon icon='fa-brands fa-github-alt' className='fa-4x text-[#4F5030] transition-transform duration-400 hover:scale-115' /> </a>
-            <a href='https://www.npmjs.com/~nataliatrcodes' target='_blank' rel='noreferrer'> <FontAwesomeIcon icon='fa-brands fa-npm' className='fa-5x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115' /> </a>
+            <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115' />
+            <Logo type='a' src='' alt='' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115' />
+            <Logo type='a' src='' alt='' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115' />
             <a href='https://app.thestorygraph.com/profile/nataliatr' target='_blank' rel='noreferrer'>
               <svg className='stroke-[1.6] stroke-[#4F5030] fill-none stroke-linecap-round stroke-linejoin-round transition-transform duration-400 hover:scale-115' width='75px' height='70px' viewBox='0 0 48 48' id='a' xmlns='http://www.w3.org/2000/svg'>
                 <defs />
