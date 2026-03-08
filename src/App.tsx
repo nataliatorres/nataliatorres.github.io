@@ -11,6 +11,7 @@ import profilePicture from './assets/profile_picture.jpeg'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import Title from './components/Title/Title'
 
 library.add(fas, far, fab)
 
@@ -23,7 +24,7 @@ function App() {
       <main className="bg-[#DFD3BD]">
         <div id="about" className="flex justify-center flex-wrap-reverse max-w-300 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] ">
             <div className="lg:content-center mt-2.5">
-                <h1>How I Build</h1>
+                <Title type="h1" title="How I build"/>
                 <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Hi, I’m Natalia — a Colombian software engineer based in Brisbane. I bring over five years of experience building customer-facing web applications for US-based product teams, working fully remotely in collaborative, product-driven teams. My background spans backend development (PHP, Drupal, REST APIs, relational databases) and frontend technologies (WordPress, JavaScript, HTML, CSS), allowing me to connect technical implementation with real user experience.</p>
                 <p className='my-3.75 text-[18px] md:text-[20px] text-left'>I care deeply about clean, maintainable code and building digital products that solve real problems. Having collaborated closely with designers, product owners, and engineers across time zones, I’ve developed strong communication skills and a detail-oriented approach to delivery. I enjoy turning complex requirements into intuitive interfaces, and creating digital products that solve real problems.</p>
                 <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Currently, I’m focused on growing as a frontend developer and aligning my skills with industry practices in Australia. I’m curious, proactive, and committed to continuous learning — always aiming to contribute thoughtfully to teams building technology that truly serves people.</p>
@@ -35,7 +36,7 @@ function App() {
             </div>
         </div>
         <div id="contact" className="flex flex-col flex-wrap place-content-center max-w-300 mx-auto w-full p-12 text-[#4F5030]">
-          <h1>Let's Connect</h1>
+          <Title type="h1" title="Let's Connect"/>
           <section className="flex place-items-center h-24 gap-2">
             <a href="https://www.linkedin.com/in/nataliatr/" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-square-linkedin" className="fa-3x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115"/> </a>
             <a href="https://github.com/nataliatorres" target="_blank"> <FontAwesomeIcon icon="fa-brands fa-github-alt" className="fa-4x text-[#4F5030] transition-transform duration-400 hover:scale-115"/> </a>
@@ -45,10 +46,10 @@ function App() {
               <defs></defs>
               <g id="b">
               <g id="c">
-              <rect id="d" class="h" x="5.5" y="6.6165" width="7.6031" height="29.8423" rx="1" ry="1"/>
-              <rect id="e" class="h" x="16.5636" y="6.6165" width="7.6031" height="29.8423" rx="1" ry="1"/>
-              <rect id="f" class="h" x="30.9108" y="6.3431" width="7.6033" height="29.8418" rx="1" ry="1" transform="translate(-4.6835 11.0135) rotate(-16.9062)"/>
-              <rect id="g" class="h" x="5.5" y="39.0428" width="37" height="2.828" rx="1" ry="1"/>
+              <rect id="d" className="h" x="5.5" y="6.6165" width="7.6031" height="29.8423" rx="1" ry="1"/>
+              <rect id="e" className="h" x="16.5636" y="6.6165" width="7.6031" height="29.8423" rx="1" ry="1"/>
+              <rect id="f" className="h" x="30.9108" y="6.3431" width="7.6033" height="29.8418" rx="1" ry="1" transform="translate(-4.6835 11.0135) rotate(-16.9062)"/>
+              <rect id="g" className="h" x="5.5" y="39.0428" width="37" height="2.828" rx="1" ry="1"/>
               </g>
               </g>
               </svg>
