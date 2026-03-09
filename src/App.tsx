@@ -37,14 +37,14 @@ function App () {
             </figure>
           </div>
         </div>
-        <section className="flex justify-center items-start gap-10 max-w-400 mx-auto px-10">
-          <div id='experience' className='w-[50%]'>
+        <section className="flex flex-col md:flex-row justify-center items-start gap-20 max-w-400 mx-auto px-10">
+          <div id='experience' className='w-full md:w-[50%]'>
             <Title type='h1' style='text-[#6B6E42]' title='Experience' />
-            <div className='flex flex-col w-full mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
+            <div className='flex flex-col w-full min-h-152.5 mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
               <Timeline items={experienceItems} />
             </div>
           </div>
-          <div id='skills' className='w-[50%]'>
+          <div id='skills' className='w-full md:w-[50%]'>
             <Title type='h1' style='text-[#6B6E42]' title='My Skills' />
             <MySkills />
           </div>
