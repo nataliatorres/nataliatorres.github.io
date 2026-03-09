@@ -24,9 +24,9 @@ function App () {
     <>
       <NavBar />
       <main className='bg-[#DFD3BD]'>
-        <div id='about' className='flex justify-center flex-wrap-reverse max-w-300 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] '>
+        <div id='about' className='flex justify-center flex-wrap-reverse max-w-400 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] '>
           <div className='lg:content-center mt-2.5'>
-            <Title type='h1' style='' title='How I build' />
+            <Title type='h1' style='text-[#6B6E42]' title='How I build' />
             <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Hi, I’m Natalia — a Colombian software engineer based in Brisbane. I bring over five years of experience building customer-facing web applications for US-based product teams, working fully remotely in collaborative, product-driven teams. My background spans backend development (PHP, Drupal, REST APIs, relational databases) and frontend technologies (WordPress, JavaScript, HTML, CSS), allowing me to connect technical implementation with real user experience.</p>
             <p className='my-3.75 text-[18px] md:text-[20px] text-left'>I care deeply about clean, maintainable code and building digital products that solve real problems. Having collaborated closely with designers, product owners, and engineers across time zones, I’ve developed strong communication skills and a detail-oriented approach to delivery. I enjoy turning complex requirements into intuitive interfaces, and creating digital products that solve real problems.</p>
             <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Currently, I’m focused on growing as a frontend developer and aligning my skills with industry practices in Australia. I’m curious, proactive, and committed to continuous learning — always aiming to contribute thoughtfully to teams building technology that truly serves people.</p>
@@ -37,21 +37,26 @@ function App () {
             </figure>
           </div>
         </div>
-        <section>
-          
-          <div>
-            <Title type='h1' style='text-[#4F5030] ' title='My Skills' />
+        <section className="flex justify-center items-start gap-10 max-w-400 mx-auto px-10">
+          <div id='experience' className='w-[50%]'>
+            <Title type='h1' style='text-[#6B6E42]' title='Experience' />
+            <div className='flex flex-col w-full mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
+              <Timeline items={experienceItems} />
+            </div>
+          </div>
+          <div id='skills' className='w-[50%]'>
+            <Title type='h1' style='text-[#6B6E42]' title='My Skills' />
             <MySkills />
           </div>
         </section>
-        <div id='contact' className='flex flex-col flex-wrap place-content-center max-w-300 mx-auto w-full p-12 text-[#4F5030]'>
-          <Title type='h1' style='' title="Let's Connect" />
+        <div id='contact' className='flex flex-col flex-wrap place-content-center max-w-400 mx-auto w-full p-12 text-[#4F5030]'>
+          <Title type='h1' style='text-[#6B6E42]' title="Let's Connect" />
           <section className='flex place-items-center h-24 gap-2'>
-            <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115' />
-            <Logo type='a' src='' alt='' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115' />
-            <Logo type='a' src='' alt='' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#4F5030] transition-transform duration-400 ease-in-out hover:scale-115' />
+            <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
+            <Logo type='a' src='' alt='' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
+            <Logo type='a' src='' alt='' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
             <a href='https://app.thestorygraph.com/profile/nataliatr' target='_blank' rel='noreferrer'>
-              <svg className='stroke-[1.6] stroke-[#4F5030] fill-none stroke-linecap-round stroke-linejoin-round transition-transform duration-400 hover:scale-115' width='75px' height='70px' viewBox='0 0 48 48' id='a' xmlns='http://www.w3.org/2000/svg'>
+              <svg className='stroke-[1.6] stroke-[#7D8050] fill-none stroke-linecap-round stroke-linejoin-round transition-transform duration-400 hover:scale-115' width='75px' height='70px' viewBox='0 0 48 48' id='a' xmlns='http://www.w3.org/2000/svg'>
                 <defs />
                 <g id='b'>
                   <g id='c'>
