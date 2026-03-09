@@ -27,9 +27,9 @@ function App () {
         <div id='about' className='flex justify-center flex-wrap-reverse max-w-400 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] '>
           <div className='lg:content-center mt-2.5'>
             <Title type='h1' style='text-[#6B6E42]' title='How I build' />
-            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Hi, I’m Natalia — a Colombian software engineer based in Brisbane. I bring over five years of experience building customer-facing web applications for US-based product teams, working fully remotely in collaborative, product-driven teams. My background spans backend development (PHP, Drupal, REST APIs, relational databases) and frontend technologies (WordPress, JavaScript, HTML, CSS), allowing me to connect technical implementation with real user experience.</p>
-            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>I care deeply about clean, maintainable code and building digital products that solve real problems. Having collaborated closely with designers, product owners, and engineers across time zones, I’ve developed strong communication skills and a detail-oriented approach to delivery. I enjoy turning complex requirements into intuitive interfaces, and creating digital products that solve real problems.</p>
-            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Currently, I’m focused on growing as a frontend developer and aligning my skills with industry practices in Australia. I’m curious, proactive, and committed to continuous learning — always aiming to contribute thoughtfully to teams building technology that truly serves people.</p>
+            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Hi, I’m Natalia — a Colombian software engineer based in Brisbane with over 5 years of experience building customer-facing web applications for US-based product teams.</p>
+            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>My background spans frontend (JavaScript, React, TypeScript, HTML, CSS) and backend (PHP, Wordpress, Drupal, REST APIs) so I know what's happening on both sides of the fence. I've collaborated closely with designers, product owners, and engineers across time zones, and I treat every codebase like someone else will have to maintain it... because they will.</p>
+            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Currently focused on growing as a frontend developer in Australia — curious, proactive and always learning 🤓</p>
           </div>
           <div className='flex'>
             <figure className='flex flex-wrap place-content-center'>
@@ -39,7 +39,7 @@ function App () {
         </div>
         <section className="flex flex-col md:flex-row justify-center items-start gap-20 max-w-400 mx-auto px-10">
           <div id='experience' className='w-full md:w-[50%]'>
-            <Title type='h1' style='text-[#6B6E42]' title='Experience' />
+            <Title type='h1' style='text-[#6B6E42]' title='My Journey' />
             <div className='flex flex-col w-full min-h-152.5 mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
               <Timeline items={experienceItems} />
             </div>
