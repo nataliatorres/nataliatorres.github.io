@@ -16,6 +16,8 @@ import Logo from './components/Logo/Logo'
 import MySkills from './components/MySkills/MySkills'
 import Timeline from './components/Timeline/Timeline'
 import { experienceItems } from './data/experience'
+import ProjectGrid from './components/Projects/Projects'
+import { projects } from './data/projects'
 
 library.add(fas, far, fab)
 
@@ -37,26 +39,30 @@ function App () {
             </figure>
           </div>
         </div>
-        <section className="flex flex-col md:flex-row justify-center items-start gap-20 max-w-400 mx-auto px-10">
+        <section className="flex flex-col md:flex-row justify-center items-start gap-20 max-w-400 mx-auto px-10 pb-20">
           <div id='experience' className='w-full md:w-[50%]'>
-            <Title type='h1' style='text-[#6B6E42]' title='My Journey' />
+            <Title type='h1' style='text-[#6B6E42]' title="Where I've been" />
             <div className='flex flex-col w-full min-h-152.5 mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
               <Timeline items={experienceItems} />
             </div>
           </div>
           <div id='skills' className='w-full md:w-[50%]'>
-            <Title type='h1' style='text-[#6B6E42]' title='My Skills' />
+            <Title type='h1' style='text-[#6B6E42]' title='Tech Stack' />
             <MySkills />
           </div>
+        </section>
+        <section>
+          <Title type='h1' style='text-[#6B6E42]' title='In the wild' />
+          <ProjectGrid projects={projects} />
         </section>
         <div id='contact' className='flex flex-col flex-wrap place-content-center max-w-400 mx-auto w-full p-12 text-[#4F5030]'>
           <Title type='h1' style='text-[#6B6E42]' title="Let's Connect" />
           <section className='flex place-items-center h-24 gap-2'>
-            <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
-            <Logo type='a' src='' alt='' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
-            <Logo type='a' src='' alt='' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
+            <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]' />
+            <Logo type='a' src='' alt='' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/80' />
+            <Logo type='a' src='' alt='' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/60' />
             <a href='https://app.thestorygraph.com/profile/nataliatr' target='_blank' rel='noreferrer'>
-              <svg className='stroke-[1.6] stroke-[#7D8050] fill-none stroke-linecap-round stroke-linejoin-round transition-transform duration-400 hover:scale-115' width='75px' height='70px' viewBox='0 0 48 48' id='a' xmlns='http://www.w3.org/2000/svg'>
+              <svg className='stroke-[1.6] stroke-[#7D8050] fill-none stroke-linecap-round stroke-linejoin-round transition-transform duration-400 hover:scale-115 hover:stroke-[#CA9248]/40' width='75px' height='70px' viewBox='0 0 48 48' id='a' xmlns='http://www.w3.org/2000/svg'>
                 <defs />
                 <g id='b'>
                   <g id='c'>
