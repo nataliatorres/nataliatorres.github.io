@@ -29,9 +29,9 @@ function App () {
         <div id='about' className='flex justify-center flex-wrap-reverse max-w-400 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] '>
           <div className='lg:content-center mt-2.5'>
             <Title type='h1' style='text-[#6B6E42]' title='How I build' />
-            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Hi, I’m Natalia — a Colombian software engineer based in Brisbane with over 5 years of experience building customer-facing web applications for US-based product teams.</p>
-            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>My background spans frontend (JavaScript, React, TypeScript, HTML, CSS) and backend (PHP, Wordpress, Drupal, REST APIs) so I know what's happening on both sides of the fence. I've collaborated closely with designers, product owners, and engineers across time zones, and I treat every codebase like someone else will have to maintain it... because they will.</p>
-            <p className='my-3.75 text-[18px] md:text-[20px] text-left'>Currently focused on growing as a frontend developer in Australia — curious, proactive and always learning 🤓</p>
+            <p className='my-3.75 text-base md:text-lg text-left'>Hi, I’m Natalia — a Colombian software engineer based in Brisbane with over 5 years of experience building customer-facing web applications for US-based product teams.</p>
+            <p className='my-3.75 text-base md:text-lg text-left'>My background spans frontend (JavaScript, React, TypeScript, HTML, CSS) and backend (PHP, Wordpress, Drupal, REST APIs) so I know what's happening on both sides of the fence. I've collaborated closely with designers, product owners, and engineers across time zones, and I treat every codebase like someone else will have to maintain it... because they will.</p>
+            <p className='my-3.75 text-base md:text-lg text-left'>Currently focused on growing as a frontend developer in Australia — curious, proactive and always learning 🤓</p>
           </div>
           <div className='flex'>
             <figure className='flex flex-wrap place-content-center'>
