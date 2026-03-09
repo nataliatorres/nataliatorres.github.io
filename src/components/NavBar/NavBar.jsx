@@ -4,7 +4,7 @@ import Hamburger from './Hamburger'
 
 const NavBar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false)
-  const navItems = ['About', 'Experience', 'Skills', 'Contact']
+  const navItems = ['About', 'Experience', 'Skills', 'Projects', 'Contact']
 
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen)
@@ -20,7 +20,7 @@ const NavBar = () => {
           <div onClick={toggleHamburger}>
             <Hamburger isOpen={hamburgerOpen} />
           </div>
-          <ul className={`${hamburgerOpen ? 'flex w-60' : 'hidden w-90'} flex-col justify-evenly h-50 md:h-10 lg:w-100 bg-[#4F5030]/85 absolute top-20 right-0 rounded-bl-[10px] md:flex md:flex-row md:items-center md:gap-5 lg:gap-2 md:static`}>
+          <ul className={`${hamburgerOpen ? 'flex w-60' : 'hidden w-100'} flex-col justify-evenly h-50 md:h-10 lg:w-100 bg-[#4F5030]/85 absolute top-20 right-0 rounded-bl-[10px] md:flex md:flex-row md:items-center md:gap-5 lg:gap-2 md:static`}>
             {
                             navItems.map((item, index) => (
                               <a onClick={toggleHamburger} className='relative overflow-hidden group font-medium text-lg md:font-normal md:text-xl' href={`#${item.toLocaleLowerCase()}`} key={index}>
