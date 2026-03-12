@@ -16,13 +16,13 @@ export const experienceItems: ExperienceItem[] = [
         title: "Frontend Developer",
         company: "Cafeto Software - Ventrix Advertising",
         period: "2022 - 2024",
-        description: "Contributed to frontend development across ~6 WordPress sites, implementing custom themes, style updates, and new functionalities using JavaScript, PHP, and Sass."
+        description: "Contributed to frontend development across over 6 WordPress sites, implementing custom themes, style updates, and new functionalities using JavaScript, PHP, and Sass."
     },
     {
         title: "Software Developer",
         company: "Cafeto Software - PROS Inc.",
         period: "2018 - 2022",
-        description: "Developed and maintained back-end components for a large Drupal-based self-service support portal used by PROS customers globally."
+        description: "Developed and maintained backend components for a large Drupal-based self-service support portal used by PROS customers globally."
     },
     {
         title: "Software Developer",
