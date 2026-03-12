@@ -10,16 +10,30 @@ const NavBar = () => {
     setHamburgerOpen(!hamburgerOpen)
   }
 
+  //useEffect to close the hamburger menu when the screen changes to md and the hamburgerOpen variable is true
   useEffect(() => {
   const handleResize = () => {
-    if (window.innerWidth >= 768) {
+    if (hamburgerOpen && window.innerWidth >= 768) {
       setHamburgerOpen(false)
     }
   }
-
   window.addEventListener("resize", handleResize)
   return () => window.removeEventListener("resize", handleResize)
 }, [])
+
+  //useEffect that closes the hamburger menu when the user clicks outside of the navbar
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      const nav = document.querySelector('nav')
+      if (nav && !nav.contains(e.target)) {
+        setHamburgerOpen(false)
+      }
+    }
+    if (hamburgerOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [hamburgerOpen])
 
   return (
     <header className='top-0 sticky border-solid z-20 bg-[#4F5030]'>
