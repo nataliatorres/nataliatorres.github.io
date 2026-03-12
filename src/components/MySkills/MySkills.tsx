@@ -9,6 +9,18 @@ const MySkills = () => {
                 <p className='text-2xl text-[#4F5030] font-semibold'>JavaScript</p>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
+                <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-react' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
+                <p className='text-2xl text-[#4F5030] font-semibold'>React</p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
+                <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-typescript' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
+                <p className='text-2xl text-[#4F5030] font-semibold'>TypeScript</p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
+                <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-tailwind-css' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
+                <p className='text-2xl text-[#4F5030] font-semibold'>Tailwind</p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
                 <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-css3-alt' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
                 <p className='text-2xl text-[#4F5030] font-semibold'>CSS 3</p>
             </div>
@@ -19,18 +31,6 @@ const MySkills = () => {
             <div className="flex flex-col items-center justify-center gap-2">
                 <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-html5' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
                 <p className='text-2xl text-[#4F5030] font-semibold'>HTML 5</p>
-            </div>
-            <div className="flex flex-col items-center justify-center gap-2">
-                <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-react' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
-                <p className='text-2xl text-[#4F5030] font-semibold'>React</p>
-            </div>
-            <div className="flex flex-col items-center justify-center gap-2">
-                <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-tailwind-css' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
-                <p className='text-2xl text-[#4F5030] font-semibold'>Tailwind</p>
-            </div>
-            <div className="flex flex-col items-center justify-center gap-2">
-                <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-typescript' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
-                <p className='text-2xl text-[#4F5030] font-semibold'>TypeScript</p>
             </div>
             <div className="flex flex-col items-center justify-center gap-2">
                 <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-php' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
