@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Hamburger from './Hamburger'
 
 const NavBar = () => {
@@ -10,17 +10,28 @@ const NavBar = () => {
     setHamburgerOpen(!hamburgerOpen)
   }
 
+  useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth >= 768) {
+      setHamburgerOpen(false)
+    }
+  }
+
+  window.addEventListener("resize", handleResize)
+  return () => window.removeEventListener("resize", handleResize)
+}, [])
+
   return (
     <header className='top-0 sticky border-solid z-20 bg-[#4F5030]'>
-      <div className='max-w-400 mx-auto w-full flex items-center justify-between gap-4 duration-200 px-8 lg:px-6 py-6 lg:py-4'>
-        <a className='flex text-center font-medium sm:text-lg' href=''>
+      <div className='max-w-400 mx-auto w-full flex items-center justify-between gap-4 duration-200'>
+        <a className='flex text-center font-medium text-lg md:text-xl mt-5 mb-5 ml-10' href=''>
           <FontAwesomeIcon icon='fa-solid fa-house' className='fa-2x' />
         </a>
-        <nav>
+        <nav className='mt-5 mb-5 mr-10'>
           <div onClick={toggleHamburger}>
             <Hamburger isOpen={hamburgerOpen} />
           </div>
-          <ul className={`${hamburgerOpen ? 'flex w-60' : 'hidden w-100'} flex-col justify-evenly h-50 md:h-10 lg:w-100 bg-[#4F5030]/85 absolute top-20 right-0 rounded-bl-[10px] md:flex md:flex-row md:items-center gap-2.5 xl:gap-4 md:static`}>
+          <ul className={`${hamburgerOpen ? 'flex w-60' : 'hidden md:w-112.5'} flex-col justify-evenly h-50 md:h-10 lg:w-125 bg-[#4F5030]/85 absolute top-19 right-0 rounded-bl-[10px] md:flex md:flex-row md:items-center gap-2.5 xl:gap-4 md:static`}>
             {
                             navItems.map((item, index) => (
                               <a onClick={toggleHamburger} className='relative overflow-hidden group font-medium text-lg md:font-normal md:text-xl' href={`#${item.toLocaleLowerCase()}`} key={index}>
