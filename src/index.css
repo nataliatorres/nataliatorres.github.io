@@ -17,16 +17,15 @@
 }
 
 a {
-  font-family: "Source Sans 3", sans-serif;
-  color: #CA9248;
+  font-family: "Space Grotesk", sans-serif;;
+  color: #DFD3BD;
 }
 a:hover {
-  color: #DFD3BD;
+  color: #CA9248;
 }
 
 h1 {
   font-family: "Fraunces", serif;
-  font-size: 3.2em;
   line-height: 1.1;
 }
 
