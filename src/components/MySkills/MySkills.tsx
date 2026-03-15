@@ -3,7 +3,7 @@ import Title from '../Title/Title'
 
 const MySkills = () => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full mt-6 py-9 px-6 rounded-4xl border-4 border-[#909560] min-h-152.5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full flex-1 mt-6 py-9 px-6 rounded-4xl border-4 border-[#909560]">
             <div className="flex flex-col items-center justify-center gap-2">
                 <Logo type='icon' src='' alt='' href='' icon='fa-brands fa-js' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115' />
                 <p className='text-2xl text-[#4F5030] font-semibold'>JavaScript</p>

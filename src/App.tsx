@@ -41,19 +41,19 @@ function App () {
             </figure>
           </div>
         </div>
-        <section className="flex flex-col md:flex-row justify-center items-start gap-20 max-w-400 mx-auto px-10 pb-20">
-          <div id='experience' className='w-full md:w-[50%]'>
+        <section className="flex flex-col md:flex-row justify-center items-stretch gap-20 max-w-400 mx-auto px-10 pb-20">
+          <div id='experience' className='w-full md:w-[50%] flex flex-col scroll-mt-20'>
             <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title="Where I've been" />
-            <div className='flex flex-col w-full min-h-152.5 mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
+            <div className='flex flex-col flex-1 w-full mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
               <Timeline items={experienceItems} />
             </div>
           </div>
-          <div id='skills' className='w-full md:w-[50%]'>
+          <div id='skills' className='w-full md:w-[50%] flex flex-col scroll-mt-20'>
             <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title='Tech Stack' />
             <MySkills />
           </div>
         </section>
-        <section>
+        <section id='projects' className='scroll-mt-20'>
           <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title='In the wild' />
           <ProjectGrid projects={projects} />
         </section>

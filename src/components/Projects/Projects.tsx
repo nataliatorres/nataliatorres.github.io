@@ -27,7 +27,7 @@ const ProjectCard = ({ title, stack, description, icon, href }: ProjectCard) => 
 )
 
 const ProjectGrid = ({ projects }: ProjectGridProps) => (
-    <div id='projects' className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 px-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 px-10">
         {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
         ))}
