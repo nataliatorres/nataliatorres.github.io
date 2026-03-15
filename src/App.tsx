@@ -19,16 +19,28 @@ import { experienceItems } from './data/experience'
 import ProjectGrid from './components/Projects/Projects'
 import { projects } from './data/projects'
 import HeroTypewriter from './components/HeroTypewriter/HeroTypewriter'
+import { useRef } from 'react'
+import useScrollReveal from './hooks/useScrollReveal'
 
 library.add(fas, far, fab)
 
 function App () {
+  const aboutRef = useRef<HTMLDivElement>(null)
+  const experienceRef = useRef<HTMLDivElement>(null)
+  const projectsRef = useRef<HTMLElement>(null)
+  const contactRef = useRef<HTMLDivElement>(null)
+
+  useScrollReveal(aboutRef)
+  useScrollReveal(experienceRef)
+  useScrollReveal(projectsRef)
+  useScrollReveal(contactRef)
+
   return (
     <>
       <NavBar />
       <HeroTypewriter />
       <main className='bg-[#DFD3BD]'>
-        <div id='about' className='flex justify-center flex-wrap-reverse max-w-400 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] '>
+        <div id='about' ref={aboutRef} className='reveal flex justify-center flex-wrap-reverse max-w-400 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] '>
           <div className='lg:content-center mt-2.5'>
             <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title='How I build' />
             <p className='my-3.75 text-base md:text-lg text-left'>I'm a Brisbane based software engineer with over 5 years of experience building customer-facing web applications for US-based product teams.</p>
@@ -42,7 +54,7 @@ function App () {
           </div>
         </div>
         <section className="flex flex-col md:flex-row justify-center items-stretch gap-20 max-w-400 mx-auto px-10 pb-20">
-          <div id='experience' className='w-full md:w-[50%] flex flex-col scroll-mt-20'>
+          <div id='experience' ref={experienceRef} className='reveal w-full md:w-[50%] flex flex-col scroll-mt-20'>
             <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title="Where I've been" />
             <div className='flex flex-col flex-1 w-full mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
               <Timeline items={experienceItems} />
@@ -53,11 +65,11 @@ function App () {
             <MySkills />
           </div>
         </section>
-        <section id='projects' className='scroll-mt-20'>
+        <section id='projects' ref={projectsRef} className='reveal scroll-mt-20'>
           <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title='In the wild' />
           <ProjectGrid projects={projects} />
         </section>
-        <div id='contact' className='flex flex-col flex-wrap place-content-center max-w-400 mx-auto w-full p-12 text-[#4F5030]'>
+        <div id='contact' ref={contactRef} className='reveal flex flex-col flex-wrap place-content-center max-w-400 mx-auto w-full p-12 text-[#4F5030]'>
           <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title="Let's Connect" />
           <section className='flex place-items-center h-24 gap-2'>
             <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]' />
