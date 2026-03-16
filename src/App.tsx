@@ -5,7 +5,7 @@ import Section from './components/Section/Section'
 import Footer from './components/Footer/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import profilePicture from './assets/profile_picture.jpeg'
+import profilePicture from './assets/profile_picture.webp'
 
 /* import all the icons in Free Solid, Free Regular, and Brands styles */
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -49,7 +49,7 @@ function App () {
           </div>
           <div className='flex'>
             <figure className='flex flex-wrap place-content-center'>
-              <Logo type='img' styles='max-w-[40vw] lg:max-w-[25vw] rounded-full' src={profilePicture} alt='Profile picture' href='' icon='' />
+              <Logo type='img' styles='max-w-[40vw] lg:max-w-[25vw] rounded-full' src={profilePicture} alt='Profile picture' href='' icon='' loading='lazy'/>
             </figure>
           </div>
         </div>

@@ -7,14 +7,15 @@ type LogoProps<T extends LogoTag> = {
     styles: string
     src: T extends 'img' ? string : never
     alt: T extends 'img' ? string : never
+    loading: T extends 'img' ? string : never
     href: T extends 'a' ? string : never
     icon: T extends 'a' | 'icon' ? string : never
 }
 
-const Logo = <T extends LogoTag>({ type, styles, src, alt, href, icon }: LogoProps<T>) => {
+const Logo = <T extends LogoTag>({ type, styles, src, alt, loading, href, icon }: LogoProps<T>) => {
     return (
         type === 'img' ? (
-            <img className={styles} src={src} alt={alt} />
+            <img className={styles} src={src} alt={alt} loading={loading}/>
         ) : type === 'icon' ? (
             <FontAwesomeIcon icon={icon} className={styles} />
         ) : (
