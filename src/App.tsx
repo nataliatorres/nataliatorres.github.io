@@ -45,7 +45,7 @@ function App () {
             <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title='How I build' />
             <p className='my-3.75 text-base md:text-lg text-left'>I'm a Brisbane based software engineer with over 5 years of experience building customer-facing web applications for US-based product teams.</p>
             <p className='my-3.75 text-base md:text-lg text-left'>My background spans frontend (JavaScript, React, TypeScript, HTML, CSS) and backend (PHP, Wordpress, Drupal, REST APIs) so I know what's happening on both sides of the fence. I've collaborated closely with designers, product owners, and engineers across time zones, and I treat every codebase like someone else will have to maintain it... because they will.</p>
-            <p className='my-3.75 text-base md:text-lg text-left'>Currently focused on growing as a frontend developer in Australia 🤓</p>
+            <p className='my-3.75 text-base md:text-lg text-left'>Currently building and growing in the Australian tech scene 🤓</p>
           </div>
           <div className='flex'>
             <figure className='flex flex-wrap place-content-center'>
