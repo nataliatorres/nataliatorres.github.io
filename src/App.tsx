@@ -40,9 +40,9 @@ function App () {
       <NavBar />
       <HeroTypewriter />
       <main className='bg-[#DFD3BD]'>
-        <div id='about' ref={aboutRef} className='reveal flex justify-center flex-wrap-reverse max-w-400 mx-auto w-full px-12 py-15 lg:flex-nowrap lg:gap-14 text-[#4F5030] '>
+        <div id='about' ref={aboutRef} className='reveal flex justify-center flex-wrap-reverse max-w-400 mx-auto w-full px-12 pt-15 pb-40 lg:flex-nowrap lg:gap-14 text-[#4F5030] scroll-mt-20'>
           <div className='lg:content-center mt-2.5'>
-            <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title='How I build' />
+            <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-10' title='How I build' />
             <p className='my-3.75 text-base md:text-lg text-left'>I'm a Brisbane based software engineer with over 5 years of experience building customer-facing web applications for US-based product teams.</p>
             <p className='my-3.75 text-base md:text-lg text-left'>My background spans frontend (JavaScript, React, TypeScript, HTML, CSS) and backend (PHP, Wordpress, Drupal, REST APIs) so I know what's happening on both sides of the fence. I've collaborated closely with designers, product owners, and engineers across time zones, and I treat every codebase like someone else will have to maintain it... because they will.</p>
             <p className='my-3.75 text-base md:text-lg text-left'>Currently building and growing in the Australian tech scene 🤓</p>
@@ -53,25 +53,25 @@ function App () {
             </figure>
           </div>
         </div>
-        <section className="flex flex-col md:flex-row justify-center items-stretch gap-20 max-w-400 mx-auto px-10 pb-20">
+        <section className="flex flex-col md:flex-row justify-center items-stretch gap-20 max-w-400 mx-auto px-10 pb-40">
           <div id='experience' ref={experienceRef} className='reveal w-full md:w-[50%] flex flex-col scroll-mt-20'>
-            <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title="Where I've been" />
+            <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-10' title="Where I've been" />
             <div className='flex flex-col flex-1 w-full mt-6 p-5 rounded-4xl border-4 border-[#909560] text-[#4F5030]'>
               <Timeline items={experienceItems} />
             </div>
           </div>
           <div id='skills' className='w-full md:w-[50%] flex flex-col scroll-mt-20'>
-            <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title='Tech Stack' />
+            <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-10' title='Tech Stack' />
             <MySkills />
           </div>
         </section>
-        <section id='projects' ref={projectsRef} className='reveal scroll-mt-20'>
-          <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title='In the wild' />
+        <section id='projects' ref={projectsRef} className='reveal scroll-mt-15 pt-15 pb-40'>
+          <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-10' title='In the wild' />
           <ProjectGrid projects={projects} />
         </section>
         <div id='contact' ref={contactRef} className='reveal flex flex-col flex-wrap place-content-center max-w-400 mx-auto w-full p-12 text-[#4F5030]'>
-          <Title type='h1' style='text-[#6B6E42] text-[3.2em]' title="Let's Connect" />
-          <section className='flex place-items-center h-24 gap-2'>
+          <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-5' title="Let's Connect" />
+          <section className='flex items-center justify-center h-24 gap-2'>
             <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]' />
             <Logo type='a' src='' alt='' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/80' />
             <Logo type='a' src='' alt='' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/60' />
