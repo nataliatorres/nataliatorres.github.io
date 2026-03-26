@@ -7,9 +7,9 @@ export type ExperienceItem = {
 
 export const experienceItems: ExperienceItem[] = [
     {
-        title: "Career Break",
-        company: "Relocation & Professional Development",
-        period: "2024 - Present",
+        title: "Sabbatical",
+        company: "Relocation & Skills Development",
+        period: "2025 - Present",
         description: "Made the leap from Colombia to Australia. While settling in, dove into React, TypeScript and Tailwind CSS and built a portfolio to put those skills into practice."
     },
     {
