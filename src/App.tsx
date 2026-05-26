@@ -72,9 +72,9 @@ function App () {
         <div id='contact' ref={contactRef} className='reveal flex flex-col flex-wrap place-content-center max-w-400 mx-auto w-full p-12 text-[#4F5030]'>
           <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-5' title="Let's Connect" />
           <section className='flex items-center justify-center h-24 gap-2'>
-            <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]' />
-            <Logo type='a' src='' alt='' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/80' />
-            <Logo type='a' src='' alt='' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/60' />
+            <Logo type='link' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]' />
+            <Logo type='link' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/80' />
+            <Logo type='link' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/60' />
             <a href='https://app.thestorygraph.com/profile/nataliatr' target='_blank' rel='noreferrer'>
               <svg className='stroke-[1.6] stroke-[#7D8050] fill-none stroke-linecap-round stroke-linejoin-round transition-transform duration-400 hover:scale-115 hover:stroke-[#CA9248]/40' width='75px' height='70px' viewBox='0 0 48 48' id='a' xmlns='http://www.w3.org/2000/svg'>
                 <defs />
