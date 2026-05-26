@@ -34,8 +34,6 @@ const LinkLogo = ({ href, icon,styles }: LinkLogoProps) => (
     </a>
 )
 
-type LogoType = 'img' | 'icon' | 'link'
-
 type LogoProps =
 | ({ type: 'img' } & ImgLogoProps)
 | ({ type: 'icon' } & IconLogoProps)
