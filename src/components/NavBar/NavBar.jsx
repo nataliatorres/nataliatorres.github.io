@@ -48,7 +48,7 @@ const NavBar = () => {
   return (
     <header className='top-0 sticky border-solid z-20 bg-[#4F5030]'>
       <div className='max-w-400 mx-auto w-full flex items-center justify-between gap-4 duration-200'>
-        <a className='flex text-center font-medium text-lg md:text-xl mt-5 mb-5 ml-10' href=''>
+        <a className='flex text-center font-medium text-lg md:text-xl mt-5 mb-5 ml-10' href='/'>
           <FontAwesomeIcon icon='fa-solid fa-house' className='fa-2x' />
         </a>
         <nav className='mt-5 mb-5 mr-10'>
