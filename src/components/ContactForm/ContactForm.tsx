@@ -33,7 +33,7 @@ const ContactForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className='flex flex-col gap-4 w-full max-w-md mx-auto mt-8'>
+        <form onSubmit={handleSubmit} className='flex flex-col gap-4 w-full max-w-md mx-auto mt-4'>
         <input
             type='text'
             placeholder='Your name'

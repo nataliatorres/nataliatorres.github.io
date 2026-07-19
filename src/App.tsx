@@ -11,6 +11,7 @@ import profilePicture from './assets/profile_picture.webp'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+
 import Title from './components/Title/Title'
 import Logo from './components/Logo/Logo'
 import MySkills from './components/MySkills/MySkills'
@@ -21,6 +22,7 @@ import { projects } from './data/projects'
 import HeroTypewriter from './components/HeroTypewriter/HeroTypewriter'
 import { useRef } from 'react'
 import useScrollReveal from './hooks/useScrollReveal'
+import ContactForm from './components/ContactForm/ContactForm'
 
 library.add(fas, far, fab)
 
@@ -71,7 +73,8 @@ function App () {
         </section>
         <div id='contact' ref={contactRef} className='reveal flex flex-col flex-wrap place-content-center max-w-400 mx-auto w-full p-12 text-[#4F5030]'>
           <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-5' title="Let's Connect" />
-          <section className='flex items-center justify-center h-24 gap-2'>
+          <ContactForm/>
+          <section className='flex items-center justify-center h-24 gap-2 mt-8'>
             <Logo type='a' src='' alt='' href='https://www.linkedin.com/in/nataliatr/' icon='fa-brands fa-square-linkedin' styles='fa-3x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]' />
             <Logo type='a' src='' alt='' href='https://github.com/nataliatorres' icon='fa-brands fa-github-alt' styles='fa-4x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/80' />
             <Logo type='a' src='' alt='' href='https://www.npmjs.com/~nataliatrcodes' icon='fa-brands fa-npm' styles='fa-5x text-[#7D8050] transition-transform duration-400 ease-in-out hover:scale-115 hover:text-[#CA9248]/60' />
