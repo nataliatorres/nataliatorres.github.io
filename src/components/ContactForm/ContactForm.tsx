@@ -61,7 +61,7 @@ const ContactForm = () => {
         <button
             type='submit'
             disabled={status === 'submitting'}
-            className='px-6 py-3 rounded-lg bg-[#4F5030] text-[#DFD3BD] font-semibold transition-transform duration-200 hover:scale-105 hover:bg-[#CA9248] disabled:opacity-50 disabled:hover:scale-100'
+            className='px-6 py-3 rounded-lg bg-[#4F5030] text-[#DFD3BD] font-semibold transition-transform duration-200 hover:scale-105 hover:bg-[#CA9248] disabled:opacity-50'
         >
             {status === 'submitting' ? 'Sending...' : 'Send message'}
         </button>
