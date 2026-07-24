@@ -68,7 +68,7 @@ function App () {
           </div>
         </section>
         <section id='projects' ref={projectsRef} className='reveal scroll-mt-15 pt-15 pb-40'>
-          <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-10' title='In the wild' />
+          <Title type='h1' style='text-[#6B6E42] text-[4.2em] pb-10' title="What I've done" />
           <ProjectGrid projects={projects} />
         </section>
         <div id='contact' ref={contactRef} className='reveal flex flex-col flex-wrap place-content-center max-w-400 mx-auto w-full p-12 text-[#4F5030]'>
